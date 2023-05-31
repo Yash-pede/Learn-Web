@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>navbar</title>
+  </head>
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+    }
+    .navigation {
+      background-color: black;
+      color: white;
+      display: flex;
+      padding: 0 15px;
+    }
+    .nav-elements {
+      list-style: none;
+      display: flex;
+      width: 100%;
+      justify-content: space-evenly;
+      align-items: center;
+      cursor: pointer;
+      color: grey;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+      font-weight: 100;
+    }
+    .hoverele {
+      transition: all 0.4s ease-out;
+      font-size: large;
+    }
+    .hoverele:hover {
+      color: white;
+      font-size: x-large;
+    }
+
+
+    .home-image{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+    #Welcome{
+      text-align: center;
+      color: purple;
+      font-size: 2rem;
+    }
+    .home{
+      /* display: flex; */
+      
+    }
+  </style>
+  <body>
+    <nav class="navigation">
+      <h1>YUSHI SUSHI</h1>
+      <ul class="nav-elements">
+        <li class="hoverele">Menu</li>
+        <li class="hoverele">order</li>
+        <li class="hoverele">Contact</li>
+        <li class="hoverele">Branches</li>
+        <li class="hoverele">Feedback</li>
+      </ul>
+    </nav>
+    <div class="home">
+      <img class="home-image" src="Sushi-Restaurant.jpg" alt="Restraunt" >
+      <h2 id="Welcome">Welcome To our Restaurant</h2>
+    </div>
+  </body>
+</html>
