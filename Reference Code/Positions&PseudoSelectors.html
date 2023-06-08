@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Positions & Pseudo Selectors</title>
+  </head>
+
+  <style>
+    .container {
+      display: inline-block;
+    }
+
+    .items_container {
+      width: 150px;
+      height: 150px;
+      background-color: red;
+      margin: 15px;
+      border: 3px solid black;
+    }
+    /* #item-1{
+      position: relative;
+      top: 200px;
+      left: 100px;
+    } */
+    /* #item-1 {
+      position: absolute;
+      top: 200px;
+      left: 300px;
+    } */
+    /* #item-1 {
+      position: sticky;
+      top: 10px;
+    } */
+
+    .forminput {
+      display: block;
+      margin: 10px auto;
+    }
+    .forminput[type="text"] {
+      color: yellow;
+      border: 2px solid green;
+    }
+
+    /* .items_container:nth-child(3n) {
+      background-color: grey;
+    }
+
+    .items_container:nth-child(even) {
+       odd 
+      background-color: green;
+    } */
+    /* .items_container:nth-child(2n+5) {
+      background-color: green;
+    } */
+
+  </style>
+
+  <body>
+    <form action="backend.php" class="forminput">
+      <input
+        class="forminput"
+        type="text"
+        name="username"
+        id=""
+        placeholder="Username"
+      />
+      <input
+        class="forminput"
+        type="password"
+        name="password"
+        id=""
+        placeholder="Password"
+      />
+      <input class="forminput" type="submit" value="submit" />
+      <input class="forminput" type="reset" value="reset" />
+    </form>
+
+    <div class="container">
+      <div id="item-1" class="items_container">item-1</div>
+      <div id="item-2" class="items_container">item-2</div>
+      <div id="item-3" class="items_container">item-3</div>
+      <div id="item-4" class="items_container">item-4</div>
+      <div id="item-5" class="items_container">item-5</div>
+      <div id="item-5" class="items_container">item-5</div>
+      <div id="item-5" class="items_container">item-5</div>
+      <div id="item-5" class="items_container">item-5</div>
+      <div id="item-5" class="items_container">item-5</div>
+      <div id="item-5" class="items_container">item-5</div>
+      <div id="item-5" class="items_container">item-5</div>
+      <div id="item-5" class="items_container">item-5</div>
+    </div>
+  </body>
+</html>

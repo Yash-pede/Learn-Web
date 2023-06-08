@@ -7,58 +7,71 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
       rel="stylesheet"
     />
-
-    <link rel="stylesheet" href="style.css" />
-
-    <title>Styling</title>
+    <title>Anurg</title>
   </head>
 
+  <style>
+    body,
+    html {
+      margin: 0;
+      padding: 0;
+    }
+    ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      height: 4rem;
+      align-items: center;
+      justify-content: center;
+    }
+    li {
+      padding: 0 10px;
+      transition: all 0.7s;
+    }
+    li:hover {
+      font-size: larger;
+    }
+    nav {
+      background-color: #000;
+      color: white;
+      font-family: "Ubuntu", sans-serif;
+    }
+    h1,
+    p {
+      text-align: center;
+    }
+    .container {
+      margin: 50px 30px;
+    }
+    .container::before {
+      /* content: "Hi this is a before tag"; */
+      /* content: url("https://picsum.photos/1080/720"); */
+    }
+  </style>
+
   <body>
+    <header>
+      <nav>
+        <ul>
+          <li class="items-1">Home</li>
+          <li class="items-2">About</li>
+          <li class="items-3">Contact</li>
+          <li class="items-4">Reach Us</li>
+        </ul>
+      </nav>
+    </header>
     <div class="container">
-      <div class="facebook"> 
-        <img id="fbImage" src="/facebook.svg" alt="facebook" />
-        <h2 class="fb_about">
-          Facebook helps you connect and share <br />
-          with the people in your life.
-        </h2>
-      </div>
-
-      <div class="login">
-        <div class="loginbox">
-          <input
-            type="text"
-            name="username"
-            placeholder="Email address or Phone Number"
-            id="Username"
-            class="fb-input"
-          />
-
-          <input
-            type="password"
-            name="password"
-            placeholder="Password"
-            id="Password"
-            class="fb-input"
-          />
-
-          <button type="reset" id="Login-Btn">Log in</button>
-
-          <p id="fb-password">
-            <a href="#">Forget password?</a>
-          </p>
-          
-          <div class="horizontal-line"></div>
-
-          <div class="create_acc">
-            <button>
-              <h3>Create new account</h3>
-            </button>
-          </div>
-        </div>
-      </div>
+      <h1>This is a demo test Website</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
+        assumenda dolores in, minus, quaerat debitis quod cum ipsum ex, rem
+        deleniti quidem optio repellendus animi quis sapiente culpa? Ratione sed
+        nisi esse? Ex, officia?
+      </p>
+      <hr />
     </div>
   </body>
 </html>
