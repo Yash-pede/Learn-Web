@@ -2,76 +2,84 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
-      rel="stylesheet"
-    />
-    <title>Anurg</title>
+    <title>visibility</title>
   </head>
 
   <style>
-    body,
-    html {
+    * {
       margin: 0;
       padding: 0;
+      --blue: #3680ff;
+      
     }
-    ul {
-      list-style: none;
-      display: flex;
-      margin: 0;
-      height: 4rem;
-      align-items: center;
-      justify-content: center;
+    #item-5 {
+      box-shadow: 5px 10px 15px 20px var(--blue);
     }
-    li {
-      padding: 0 10px;
-      transition: all 0.7s;
+    #item-3 {
+      box-shadow: -13px 30px 13px 30px yellow;
     }
-    li:hover {
-      font-size: larger;
-    }
-    nav {
-      background-color: #000;
-      color: white;
-      font-family: "Ubuntu", sans-serif;
-    }
-    h1,
-    p {
-      text-align: center;
+    h1 {
+      /* visibility: hidden; */
+      /* display: none; */
     }
     .container {
-      margin: 50px 30px;
+      display: inline-block;
+      display: flex;
+      flex-wrap: wrap;
+      /* flex-direction: column; */
+      gap: 5rem;
     }
-    .container::before {
-      /* content: "Hi this is a before tag"; */
-      /* content: url("https://picsum.photos/1080/720"); */
+    #item-4 {
+      box-shadow: 10px 10px;
+    }
+
+    #item-1 {
+      box-shadow: 5px 10px 10px;
+    }
+    #item-2 {
+      box-shadow: 10px 10px;
+    }
+
+    .items_container {
+      width: 150px;
+      height: 150px;
+      background-color: red;
+      margin: 15px;
+      border: 3px solid black;
+
+      margin: 1cm;
+      margin: 1mm;
+      margin: 1Q;
+      margin: 1in;
+      margin: 1pc;
+      margin: 1pt;
+      margin: 1px;
+
+      /* font-size: 50px; */
+      /* margin: 1em; */
+
+      /* margin: 1rem; */
+
+      /* margin: 1vw; */
+      /* margin: 6vh; */
     }
   </style>
 
   <body>
-    <header>
-      <nav>
-        <ul>
-          <li class="items-1">Home</li>
-          <li class="items-2">About</li>
-          <li class="items-3">Contact</li>
-          <li class="items-4">Reach Us</li>
-        </ul>
-      </nav>
-    </header>
+    <!-- <h1 hidden>this is a headding</h1> -->
+    <h2>this is a test</h2>
+
+    <h1>this is a headding</h1>
+
+    <h2>this is a test</h2>
+
     <div class="container">
-      <h1>This is a demo test Website</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
-        assumenda dolores in, minus, quaerat debitis quod cum ipsum ex, rem
-        deleniti quidem optio repellendus animi quis sapiente culpa? Ratione sed
-        nisi esse? Ex, officia?
-      </p>
-      <hr />
+      <div id="item-1" class="items_container">item-1</div>
+      <div id="item-2" class="items_container">item-2</div>
+      <div id="item-3" class="items_container">item-3</div>
+      <div id="item-4" class="items_container">item-4</div>
+      <div id="item-5" class="items_container">item-5</div>
     </div>
   </body>
 </html>
