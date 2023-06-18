@@ -12,6 +12,7 @@ body {
   background: var(--background-color);
   color: white;
   overflow-x: hidden;
+  background-color: #393e46;
 }
 .logo {
   margin-left: 5%;
@@ -25,11 +26,20 @@ nav {
   height: 4rem;
   font-size: 1.5rem;
 
-  background-color: rgba(0, 0, 0, 0.224);
+  background-color: rgba(0, 0, 0, 0.68);
   backdrop-filter: blur(20px);
 
   font-family: "Segoe UI", Tahoma, sans-serif;
-  position: relative;
+  /* position: relative; */
+  position: sticky;
+  top: 0;
+}
+
+a,
+a::before,
+a::after {
+  text-decoration: none;
+  color: white;
 }
 
 .element {
@@ -47,6 +57,7 @@ nav {
 }
 .menu {
   display: none;
+  cursor: pointer;
 }
 
 @media (max-width: 35em) {
@@ -82,5 +93,49 @@ nav {
     position: absolute;
     right: 1.5rem;
     z-index: 999;
+  }
+}
+
+.hero-text {
+  text-align: center;
+  margin: 7vh 0;
+  font-family: "Ubuntu", sans-serif;
+  letter-spacing: min(1.5rem, 1.5vw);
+
+  text-decoration: underline;
+  text-decoration-color: khaki;
+  text-underline-offset: 1vh;
+
+  transition: all 0.5s ease-in-out;
+  cursor: none;
+}
+
+.hero-text:hover {
+  text-decoration-color: steelblue;
+}
+
+.hero-description {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.hero-description_text {
+  font-family: "Roboto Slab", serif;
+  letter-spacing: 0.3vw;
+  max-width: 50vw;
+}
+
+.hero-image img {
+  width: min(20rem, 30vw);
+  height: auto;
+}
+
+@media (max-width: 35em) {
+  .hero-description {
+    flex-direction: column;
+  }
+  .hero-description_text {
+    margin: 10vw;
   }
 }

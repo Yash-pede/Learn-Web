@@ -7,6 +7,13 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="index.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&family=Ubuntu:wght@500&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <nav>
@@ -18,13 +25,36 @@
 
       <div class="element">
         <ul class="listnav" data-expanded="false">
-          <li>Home</li>
-          <li>About</li>
-          <li>Works</li>
-          <li>Contact</li>
+          <li><a href="#">Home</a></li>
+          <li><a href="pages/about.html">About</a></li>
+          <li><a href="pages/works.html">Works</a></li>
+          <li><a href="#">Contact</a></li>
         </ul>
       </div>
     </nav>
+
+    <div class="hero">
+      <h2 class="hero-text">Hello I'am Gourav</h2>
+      <div class="hero-description">
+        <div class="hero-image">
+          <img src="public/Gourav.png" alt="Gourav ki photo" />
+        </div>
+
+        <div class="hero-description_text">
+          <h5>
+            Hello, everyone! Allow me to take you on a journey into my world as
+            a passionate learner, pursuing a Bachelor of Technology (B.Tech)
+            degree in Computer Science and Engineering (CSE). Alongside my
+            academic endeavors, I have immersed myself in the captivating realm
+            of web development, constantly expanding my skills and pushing the
+            boundaries of what I can create on the internet. Join me as I share
+            the experiences, challenges, and aspirations that have shaped my
+            personal and professional growth in this exciting field.
+          </h5>
+        </div>
+      </div>
+    </div>
+
     <script>
       const navToggle = document.getElementsByClassName("listnav")[0];
 
