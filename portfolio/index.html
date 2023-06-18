@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="logo flex-cm">Yash</div>
+
+      <button class="menu" onclick="navToogler()">
+        <img src="public/menu.svg" alt="menu" />
+      </button>
+
+      <div class="element">
+        <ul class="listnav" data-expanded="false">
+          <li>Home</li>
+          <li>About</li>
+          <li>Works</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+    </nav>
+    <script>
+      const navToggle = document.getElementsByClassName("listnav")[0];
+
+      const isExpanded = navToggle.getAttribute("data-expanded");
+
+      function navToogler() {
+        if (isExpanded === "true") {
+          navToggle.setAttribute("data-expanded", "false");
+        } else {
+          navToggle.setAttribute("data-expanded", "true");
+        }
+      }
+    </script>
+  </body>
+</html>

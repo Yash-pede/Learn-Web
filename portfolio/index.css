@@ -1,0 +1,4 @@
+.flex-cm {
+  display: flex;
+  gap: var(--gap, 2rem);
+}
