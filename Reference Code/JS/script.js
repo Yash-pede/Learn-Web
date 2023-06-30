@@ -262,26 +262,41 @@ comments */
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-//Function's
+//Prompt
 
-// function sum(a, b) {
-//   return (a + b);
+// let name = prompt("enter your name : ");
+// console.log(name);
+// console.log(typeof name);
+
+// name = Number.parseInt(name);
+// console.log(name);
+// console.log(typeof name);
+
+//Functions
+
+// console.log(2 + 2);
+// console.log(4+4);
+
+// function greet() {
+//   console.log("Hello sir how are you");
+//   return 2 + 2;
+//   console.log("I am totally fine thanku");
 // }
 
-// console.log(sum( 5 , 10 ));
+// greet();
 
-//Arrow function 
+// let r = greet();
+// console.log(r);
 
-// const sum = (a, b) => {
-//   return a + b;
-// };
+// console.log(greet());
 
-// console.log(sum(10, 1));
-
-function minus(a, b){
-return a - b
+function add(x, y) {
+  let result = x + y;
+  console.log(result);
 }
-console.log(minus(10, 5));
+
+add(5, 7);
+
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
