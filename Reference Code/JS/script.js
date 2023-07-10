@@ -160,6 +160,32 @@ comments */
 //     break;
 // }
 
+// let a = Number.parseInt(prompt("enter the 1st no: "));
+// let operation = prompt("What operation would u like to perform: ");
+// let b = Number.parseInt(prompt("enter the 2st no: "));
+
+// switch (operation) {
+//   case "+":
+//     console.log(a + b);
+//     break;
+
+//   case "-":
+//     console.log(a - b);
+//     break;
+
+//   case "*":
+//     console.log(a * b);
+//     break;
+
+//   case "/":
+//     console.log(a / b);
+//     break;
+
+//   default:
+//     console.log("U have enterd an abrupt value");
+//     break;
+// }
+
 // console.log("TERNARY OPERATOR");
 
 // let age = prompt("Enter Your Age Below ");
@@ -290,13 +316,56 @@ comments */
 
 // console.log(greet());
 
-function add(x, y) {
-  let result = x + y;
-  console.log(result);
-}
+// function add(x, y) {
+//   let result = x + y;
+//   console.log(result);
+// }
 
-add(5, 7);
+// add(5, 7);
+
+//Arrow functions
+
+// const addition = (a, b) => {
+//   return a + b;
+// };
+
+// console.log(addition(1, 1));
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// let Marks = {
+//   gourav: 100,
+//   yash: 0,
+//   baldev: 50,
+//   amrita: -10,
+// };
+
+// console.log(Marks["amrita"]);
+
+// for (const mark in Marks) {
+//   //   console.log(mark);
+//   console.log(mark, "got", Marks[mark]);
+//
+
+// let keys = Object.keys(Marks);
+// console.log(keys);
+
+// for(const a of keys){
+//     console.log(a + " got", Marks[a]);
+// }
+
+// let correct_Number = 5;
+
+// let value = prompt("PLz sir enter the value: ");
+
+// if (value != correct_Number) {
+//   console.log("TRY AGAIN");
+// } else {
+//   console.log("7 crore");2
+
+// }
+
+let y = "🍓";
+console.log(y);
