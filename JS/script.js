@@ -314,9 +314,9 @@ comments */
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-console.log("Strings");
+// console.log("Strings");
 
-let name = "yash bhai Bahot badhiya yash";
+// let name = "yash bhai Bahot badhiya yash";
 
 // console.log(name);
 // console.log(name.length);
@@ -343,5 +343,75 @@ let name = "yash bhai Bahot badhiya yash";
 // console.log(name[5],"unique");
 
 // console.log(name.startsWith('Y'));
-let a = name[3]
-console.log(a);
+// let a = name[3]
+// console.log(a);
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//Ps
+
+// let fruits = ["banana", "apple", "orange", "guava"];
+// console.log(fruits[3]);
+
+// let a = [undefined, null, "yash", 25, "024.54", true];
+// console.log(a);
+
+// let marks = [50, 10, 45, 85, null, "not Present"];
+
+// console.log(marks);
+// console.log(marks[0]);
+// console.log(marks[1]);
+// console.log(marks[2]);
+// console.log(marks[3]);
+// console.log(marks[4]);
+// console.log(marks[5]);
+// console.log(marks[6]);
+
+// console.log("The length of marks is : ", marks.length);
+
+// marks[6] = 69;
+// console.log(marks[6]);
+
+// marks[0] = 99;
+// console.log(marks[0]);
+
+// console.log(typeof marks);
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//Array methords
+
+let num = [1, 2, 3, 4];
+
+// let b = num.toString();
+// console.log(b);
+// console.log(typeof b);
+
+// let c = num.join("_");
+// let c = num.join(" and ");
+// console.log(c, typeof c);
+
+// num.pop();
+// let r = num.pop();
+// console.log(num);
+// console.log(r);
+
+// let r = num.push(55);
+// console.log(num);
+// console.log(r);
+
+// let r = num.shift()
+// console.log(r);
+// console.log(num);
+
+// let r = num.unshift("Yash")
+// console.log(r);
+// console.log(num);
+
+// delete num
+// console.log(num);
+
