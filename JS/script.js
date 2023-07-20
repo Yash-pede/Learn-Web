@@ -385,7 +385,7 @@ comments */
 
 //Array methords
 
-let num = [1, 2, 3, 4];
+// let num = [1, 2, 3, 4];
 
 // let b = num.toString();
 // console.log(b);
@@ -415,3 +415,35 @@ let num = [1, 2, 3, 4];
 // delete num
 // console.log(num);
 
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+let num = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+let num_more = [11, 15, 6, 86, 14, 45, 36, 17, 12, 13, 92];
+// console.log(num);
+
+// delete num[3];
+// console.log(num);
+
+// let new_array = num.concat(num_more);
+// console.log(new_array);
+
+// function compare(a, b) {
+// //   return a - b; //assending
+// //   return b - a; //decending
+// }
+
+// console.log(num_more.sort(compare));
+
+// console.log(num.slice(2,5));
+
+// num.splice(2, 3, 444, 255);
+// console.log(num);
+
+let temp = [];
+for (let i = num.length; i > 0; i--) {
+  console.log(num[i - 1]);
+  temp[num.length - i] = num[i - 1];
+}
+console.log(temp);
