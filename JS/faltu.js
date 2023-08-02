@@ -40,3 +40,25 @@
 // a.splice(2,2,22,33)
 // console.log(a);
 
+// let a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// console.log(a);
+
+// for (const i of a) {
+//     console.log(i);
+// }
+
+// a.forEach((i) => {
+//   console.log(i);
+// });
+
+// function sum(a, b) {
+//   return a + b;
+// }
+
+// const sum2 = (a, b) => {
+//   return a + b;
+// };
+
+// console.log(sum(1, 2));
+// console.log(sum2(1, 2));
+

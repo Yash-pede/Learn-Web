@@ -419,8 +419,8 @@ comments */
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-let num = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-let num_more = [11, 15, 6, 86, 14, 45, 36, 17, 12, 13, 92];
+// let num = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+// let num_more = [11, 15, 6, 86, 14, 45, 36, 17, 12, 13, 92];
 // console.log(num);
 
 // delete num[3];
@@ -441,9 +441,70 @@ let num_more = [11, 15, 6, 86, 14, 45, 36, 17, 12, 13, 92];
 // num.splice(2, 3, 444, 255);
 // console.log(num);
 
-let temp = [];
-for (let i = num.length; i > 0; i--) {
-  console.log(num[i - 1]);
-  temp[num.length - i] = num[i - 1];
-}
-console.log(temp);
+// let temp = [];
+// for (let i = num.length; i > 0; i--) {
+//   console.log(num[i - 1]);
+//   temp[num.length - i] = num[i - 1];
+// }
+// console.log(temp);
+
+// For Each Loop
+
+// num.forEach((value, index, arr) => {
+//   console.log(`the value in the array ${arr} is ${value} and at the index ${index} \n`);
+// });
+
+// const b = num.map((value, index, arr) => {
+//   return (arr[index] = value + 1);
+// });
+// console.log(b);
+
+// const c = num.filter((value,index,arr) => value < 5);
+// console.log(c);
+
+// let c = num.reduce((a, b, index, arr) => a + b );
+
+// console.log(c);
+// let b = "yash";
+// let a = Array.from(b);
+// console.log(a);
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// const changeCol_green = () => {
+//     document.body.text = "red";
+//     document.body.bgColor = "green";
+//   };
+//   const changeColtored = () => {
+//     document.body.bgColor = "red";
+//     document.body.text = "blue";
+//   };
+//   const changeColblack = () => {
+//     document.body.bgColor = "black";
+//     document.body.text = "white";
+//   };
+//   const changeColkhaki = () => {
+//     document.body.text = "black";
+//     document.body.bgColor = "khaki";
+//   };
+// function google() {
+//   window.location.href = "https://google.com";
+// }
+// const yt = () => {
+//   window.location.href = "https://youtu.be";
+// };
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+let person = {
+  name: "Yash",
+  age: 18,
+  networth: "10 Billion",
+};
+
+console.log(person);
+console.table(person);
