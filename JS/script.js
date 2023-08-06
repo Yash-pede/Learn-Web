@@ -383,8 +383,34 @@ comments */
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-//Array methords
+//Array
 
+// let marks = [50, 10, 45, 85, null, "not Present"];
+
+// console.log(marks);
+// console.log(marks[0]);
+// console.log(marks[1]);
+// console.log(marks[2]);
+// console.log(marks[3]);
+// console.log(marks[4]);
+// console.log(marks[5]);
+// // console.log(marks[6]);
+
+// console.log("The length of marks is : ", marks.length);
+
+// marks[6] = 69;
+// console.log(marks[6]);
+
+// marks[0] = 99;
+// console.log(marks[0]);
+
+// console.log(typeof marks);
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//Array methords
 // let num = [1, 2, 3, 4];
 
 // let b = num.toString();
@@ -404,23 +430,19 @@ comments */
 // console.log(num);
 // console.log(r);
 
-// let r = num.shift()
+// let r = num.shift();
+// console.log(num);
 // console.log(r);
-// console.log(num);
 
-// let r = num.unshift("Yash")
-// console.log(r);
-// console.log(num);
-
-// delete num
-// console.log(num);
+// let r = num.unshift(55);
+// console.log(num, r);
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 // let num = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-// let num_more = [11, 15, 6, 86, 14, 45, 36, 17, 12, 13, 92];
+// let num_more = [11, 12, 13, 14, 15, 16, 17, 18, 19];
 // console.log(num);
 
 // delete num[3];
@@ -429,82 +451,226 @@ comments */
 // let new_array = num.concat(num_more);
 // console.log(new_array);
 
-// function compare(a, b) {
-// //   return a - b; //assending
-// //   return b - a; //decending
-// }
+// let compare = (a, b) => {
+//   return a - b;//decending
+// //   return b-a;//assending
+// };
+// num_more.sort(compare)
+// console.log(num_more);
 
-// console.log(num_more.sort(compare));
+// Splice and slice
+// let num = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
-// console.log(num.slice(2,5));
-
-// num.splice(2, 3, 444, 255);
+// num.splice(2, 3, 777, 999, 666);
 // console.log(num);
 
-// let temp = [];
-// for (let i = num.length; i > 0; i--) {
-//   console.log(num[i - 1]);
-//   temp[num.length - i] = num[i - 1];
+// let del_values = num.splice(2, 3, 777, 999, 666);
+// console.log(del_values, num);
+
+// let new_num = num.slice(3);
+// let new_num = num.slice(3, 7);
+// console.log(new_num);
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// Loops For arrays
+
+// let num = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+// for(let i =0; i<num.length; i++){
+//     console.log(num[i]);
 // }
-// console.log(temp);
 
-// For Each Loop
-
-// num.forEach((value, index, arr) => {
-//   console.log(`the value in the array ${arr} is ${value} and at the index ${index} \n`);
+//For Each
+// num.forEach((element) => {
+//   console.log(element * element);
 // });
 
-// const b = num.map((value, index, arr) => {
-//   return (arr[index] = value + 1);
+// Array from
+// let name = "Yash"
+// let arr = Array.from(name)
+// console.log(arr);
+
+// for...of
+// for (const i of num) {
+//     console.log(i);
+// }
+
+// for...in
+// for (const i in num) {
+//     // console.log(i);
+//     console.log(num[i]);
+// }
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//Array map
+
+// let arr = [54, 68, 36, 35];
+// console.log(arr);
+
+// let a = arr.map((value, index, array) => {
+//   console.log(value, index, array);
+//   return value + index;
 // });
-// console.log(b);
 
-// const c = num.filter((value,index,arr) => value < 5);
-// console.log(c);
-
-// let c = num.reduce((a, b, index, arr) => a + b );
-
-// console.log(c);
-// let b = "yash";
-// let a = Array.from(b);
+// console.log(arr);
 // console.log(a);
 
-/////////////////////////////////////////////////////////////////////////////////////////////////////////
+//Array Filter
+// let arr2 = [5, 3, 4, 3, 43, 11, 65];
+
+// let a2 = arr2.filter((a) => {
+//   return a < 10;
+// });
+// console.log(a2);
+
+//Array Reduce
+
+// let arr3 = [1, 2, 3, 4, 5, 2, 4];
+
+// let new_arr3 = arr3.reduce((a, b) => {
+//   return a + b;
+// });
+// console.log(new_arr3);
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-// const changeCol_green = () => {
-//     document.body.text = "red";
-//     document.body.bgColor = "green";
-//   };
-//   const changeColtored = () => {
-//     document.body.bgColor = "red";
-//     document.body.text = "blue";
-//   };
-//   const changeColblack = () => {
-//     document.body.bgColor = "black";
-//     document.body.text = "white";
-//   };
-//   const changeColkhaki = () => {
-//     document.body.text = "black";
-//     document.body.bgColor = "khaki";
-//   };
-// function google() {
-//   window.location.href = "https://google.com";
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//Exercise
+
+// let number = Math.round(Math.random() * ((0, 100) + 0));
+// // console.log(number);
+
+// let usr_no = Number.parseInt(prompt("Enter the no to guess : "));
+
+// console.log("U now have 100 chaces to guess the correct number ");
+
+// let chances = 100;
+
+// do {
+//   console.log("Enter Your guess again");
+//   usr_no = Number.parseInt(prompt("Enter the no to guess : "));
+//   chances = chances - 1;
+
+//   if (usr_no > number) {
+//     console.log("Plz Guess a lil Lower");
+//   } else {
+//     console.log("Plz Guess a lil Higher");
+//   }
+// } while (number !== usr_no && chances > 0);
+
+// if (chances == 0) {
+//   console.log("You are out of chances ");
+// } else {
+//   console.log("Congrulation You won");
+//   console.log(
+//     `Your Score is ${100 - chances} and the correct Number is ${number}`
+//   );
 // }
-// const yt = () => {
-//   window.location.href = "https://youtu.be";
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//CONSOLE
+
+// console.log(console);
+
+// console.error("This is a error");
+
+// console.assert(5 > 7);
+// console.assert(5 < 7);
+
+// console.clear();
+
+// let obj = {
+//   1: "Yash",
+//   2: "Piyush",
+//   3: "Krishna",
 // };
+// console.table(obj);
+
+// console.warn("Hey this is a warning");
+
+// console.info("Hey this is a info");
+
+// console.time("a");
+// console.timeEnd("a");
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-let person = {
-  name: "Yash",
-  age: 18,
-  networth: "10 Billion",
+//alert,prompt,confirm
+
+// alert("Hello script works")
+
+// let a = prompt("Enter the value of a: ", "50");
+// a = Number.parseInt(a);
+// // document.write(a);
+// // document.write("<h1>I am loving JS</h1>");
+
+// let write = confirm("Do u want to write this on page");
+
+// if (write) {
+//   document.write(a);
+// } else {
+//   document.write("Plz allow me 2 write ");
+// }
+
+// document.body.style.background = "khaki"
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// document.body;
+// document.head;
+// document.documentElement;
+// document.title; /*-->string*/
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// console.log(document.body.firstChild);
+// console.log(document.body.lastChild);
+// console.log(document.body.childNodes);
+// console.log(document.body.childNodes[0]);
+// console.log(document.body.firstChild);
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// $0 - $1
+
+// console.log(document.body.firstChild);
+// let a = document.body.firstChild;
+
+// console.log(a.parentNode);
+// console.log(a.parentElement);
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+const changeBgColor = () => {
+  document.body.firstElementChild.style.background = "red";
 };
+let b = document.body;
+console.log("The first child of b is : ", b.firstChild);
 
-console.log(person);
-console.table(person);
+console.log("The first Elementchild of b is : ", b.firstElementChild);
+
+changeBgColor();
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
