@@ -661,16 +661,33 @@ comments */
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-const changeBgColor = () => {
-  document.body.firstElementChild.style.background = "red";
-};
-let b = document.body;
-console.log("The first child of b is : ", b.firstChild);
+// const changeBgColor = () => {
+//   document.body.firstElementChild.style.background = "red";
+// };
 
-console.log("The first Elementchild of b is : ", b.firstElementChild);
+// let b = document.body;
+// console.log("The first child of b is : ", b.firstChild);
 
-changeBgColor();
+// console.log("The first Elementchild of b is : ", b.firstElementChild);
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-/////////////////////////////////////////////////////////////////////////////////////////////////////////
+// let id1 = document.getElementById("id1");
+
+// console.log(id1);
+
+// let class1 = document.getElementsByClassName("class1");
+// console.log(class1);
+
+// console.log(id1.matches(".class"));
+
+// console.log(document.body.childNodes);
+
+// console.log(document.body.children);
+
+// console.log(document.body.firstChild)
+// console.dir(document.body.firstElementChild)
+
+// console.log(document.querySelectorAll(".class1"));
